@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
+
+    <link rel="icon" href="./img/devchallenges.png" />
+
+    <!-- <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    /> -->
+
+    <link rel="stylesheet" href="style.css"></link>
+
+    <title>Gallerygram</title>
+
+  </head>
+  <body>
+    <header>
+      <div class="profile-pic-container">
+        <img src="./img/profilePhoto.png" class="profilepic" alt="profile photo">
+      </div>
+      <div class="heading">
+        <h2>rodney cotton</h2>
+        <p>helsinki, finland</p>
+      </div>
+      <div class="profile-stats">
+        <div class="box">
+          <h2 class="boxtext boxtop">100</h2>
+          <p class="boxtext boxbottom">posts</p>
+        </div>
+        <div class="box">
+          <h2 class="boxtext boxtop">2,242</h2>
+          <p class="boxtext boxbottom">followers</p>
+        </div>
+        <div class="box">
+          <h2 class="boxtext boxtop">1,432</h2>
+          <p class="boxtext boxbottom">following</p>
+        </div>
+      </div>
+    </header>
+    <section id="gallery">
+      <div class="pic1">
+        <img src="./img/photo1.png" alt="photo1">
+      </div>
+      <div class="pic2">
+        <img src="./img/photo2.png" alt="photo2">
+      </div>
+      <div class="pic3">
+        <img src="./img/photo3.png" alt="photo3">
+      </div>
+      <div class="pic4">
+        <img src="./img/photo_4.png" alt="photo4">
+      </div>
+      <div class="pic5">
+        <img src="./img/photo5.png" alt="photo5">
+      </div>
+      <div class="pic6">
+        <img src="./img/photo6.png" alt="photo6">
+      </div>
+    </section>
+    <footer><p>created by <span class="name">@yuandere</span> - devChallenges.io</p></footer>
+    <script>
+      const toggle = (elementId) => {
+        const element = document.getElementById(elementId);
+
+        if (element.classList.contains(elementId + "--open")) {
+          element.classList.remove(elementId + "--open")
+        } else {
+          element.classList.add(elementId + "--open")
+        }
+      }
+
+      const toggleNavigation = () => {
+        toggle("nav");
+        toggle("burgerbutton")
+      }
+    </script>
+  </body>
+  
+  </html>
